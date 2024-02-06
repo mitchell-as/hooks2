@@ -1,0 +1,13 @@
+#!/bin/sh
+# Copy this file to .git/hooks/
+
+echo "running pre-commit git hook"
+
+if git diff --name-only HEAD@{1} HEAD -- | grep -q 'buildscript.as'; then
+	echo "buildscript.as changed, running 'state commit'"
+	/c/users/me/cli/build/state.exe commit
+	if [ ! -z "`git diff .activestate/commit`" ]; then
+		echo "adding new commit id"
+		git add .activestate/commit
+	fi
+fi
