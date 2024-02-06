@@ -29,6 +29,10 @@ let:
 						version = "4.09"
 					}
 				]
+			},
+			{
+				name = "Try-Tiny",
+				namespace = "language/perl"
 			}
 		],
 		solver_version = null
