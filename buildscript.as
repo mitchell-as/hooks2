@@ -5,7 +5,7 @@ let:
 		src = "$sources"
 	)
 	sources = solve(
-		at_time = "2024-02-06T17:00:10.163000Z",
+		at_time = "$at_time",
 		platforms = [
 			"78977bc8-0f32-519d-80f3-9043f059398c"
 		],
@@ -19,6 +19,10 @@ let:
 						version = "5.36.3"
 					}
 				]
+			},
+			{
+				name = "JSON",
+				namespace = "language/perl"
 			}
 		],
 		solver_version = null
