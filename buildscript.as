@@ -22,6 +22,10 @@ let:
 			},
 			{
 				name = "JSON",
+				namespace = "language/perl",
+			},
+			{
+				name = "Try-Tiny",
 				namespace = "language/perl"
 			}
 		],
